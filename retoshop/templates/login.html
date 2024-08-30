@@ -11,7 +11,7 @@
     <div class="main">
         <h1>Reto Shop</h1>
         <h3>Enter your login credentials</h3>
-        <form action="">
+        <form method="POST">
               <label for="first">
                     Username:
               </label>
@@ -35,7 +35,7 @@
               </div>
         </form>
         <p>Not registered?
-              <a href="register.html"
+              <a href={% url 'register' %}
                  style="text-decoration: none;">
                     Create an account
               </a>
