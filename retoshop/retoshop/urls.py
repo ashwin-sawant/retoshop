@@ -16,7 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from retoshop import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',views.Home),
+    path('contact/',views.Contact),
+    path('aboutus/',views.Aboutus),
+    path('dashboard/',views.Dashboard),
+    path('login/',views.Login),
+    path('resiger/',views.Register)
 ]
