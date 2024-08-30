@@ -1,0 +1,139 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 2000px; 
+}
+
+.logo {
+    color: white;
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    padding-top: 60px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 90px); 
+    background: #f3f3f3;
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 1000px; /* Adjust the max-width if needed */
+}
+
+#search {
+    flex: 1;
+    padding: 15px; /* Increased padding */
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Adjusted border-radius */
+    font-size: 18px; /* Increased font-size */
+    outline: none;
+}
+
+.search-button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px; /* Adjusted border-radius */
+    color: white;
+    padding: 15px 25px; /* Increased padding */
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 18px; /* Increased font-size */
+}
+
+.search-button i {
+    font-size: 18px; /* Increased font-size */
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+}
+
+
+.product-card h4 {
+    margin: 10px 0;
+    color: #333;
+}
+
+
+.add-to-cart {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
