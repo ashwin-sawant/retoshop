@@ -20,10 +20,10 @@ from retoshop import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.Home),
-    path('contact/',views.Contact),
-    path('aboutus/',views.Aboutus),
-    path('dashboard/',views.Dashboard),
+    path('',views.Home,name="home"),
+    path('contact/',views.Contact,name="contact"),
+    path('aboutus/',views.Aboutus,name="aboutus"),
+    path('dashboard/',views.Dashboard,name="dashboard"),
     path('login/',views.Login),
     path('register/',views.Register)
 ]

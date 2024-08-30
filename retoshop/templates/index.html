@@ -1,9 +1,11 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="C:\Users\ADMIN\Desktop\Reto Shop\retoshop\static\index.css">
+    <link rel="stylesheet" href={% static "style/index.css" %}>
     <title>Home</title>
 </head>
 <body>
@@ -12,10 +14,10 @@
             <div class="nav-container">
                 <h1 class="logo">Reto Shop</h1>
                 <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="aboutus.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href={% url 'home' %}>Home</a></li>
+                    <li><a href={% url 'aboutus' %}>About Us</a></li>
+                    <li><a href={% url 'contact' %}>Contact</a></li>
+                    <li><a href={% url 'dashboard' %}>Dashboard</a></li>
                 </ul>
             </div>
         </nav>
