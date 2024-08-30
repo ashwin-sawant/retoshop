@@ -25,5 +25,5 @@ urlpatterns = [
     path('aboutus/',views.Aboutus),
     path('dashboard/',views.Dashboard),
     path('login/',views.Login),
-    path('resiger/',views.Register)
+    path('register/',views.Register)
 ]
